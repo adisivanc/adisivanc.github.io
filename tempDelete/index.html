@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <title>Cargoes</title>
+          
+    <link href="./assets/css/style.css" rel="stylesheet"/>
+</head>
+<body id="body">
+    <div>
+        <header class="header">
+            <div class="container">
+                <div id="logo">
+                    <img src="./assets/img/cargoes_logo.svg" alt="CARGOES" title="logo" onclick="scrollToElement('section01')"/>
+                </div>
+                <div id="menu" class="menuTemp">
+                    <ul class="navContainer">
+                        <li class="active">
+                            <a href="" title="Features" onclick="scrollToElement('section02')">Features</a> 
+                        </li>
+                        <li>
+                            <a href="" title="Testimonials" onclick="scrollToElement('section03')">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="" title="Product" onclick="scrollToElement('section04')">Explore The Product</a>
+                        </li>
+                        <li>
+                            <a href="" title="Process" onclick="scrollToElement('section05')">Process</a>
+                        </li>
+                        <li>
+                            <a href="" title="Support" onclick="scrollToElement('section06')">Support</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="section01" id="section01">
+            <div class="container">
+                <div class="section01-content">
+                    <div class="sec01-btn01">
+                        <button class="btn btn-light">
+                            End to End Real-Time Visibility
+                            <span>
+                                <img src="./assets/img/finger.svg" alt="End to End" title="End to End Real-Time Visibility"/>
+                            </span>
+                        </button>
+                        <span class="dynText" id="dynText">
+                            <span id="current"></span>
+                            <span id="next"></span>
+                        </span>
+                    </div>
+                    <h2>From Reactive to Proactive Logistics</h2>
+                    <h4>Enable visibility, foster collaboration & improve decision making via meaningful insights</h4>
+                    <div class="sec01-btn02">
+                        <div><button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book A DEMO</button></div> 
+                        <div>
+                            <button class="btn btn-outline-info text-uppercase">Try for free</button> 
+                            <p>Try Cargoes Flow now and <span>track up to 20 containers for free.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section01-img">
+                    <div class="introCol firstColumn">
+                        <div class="content success">
+                            <span>
+                                <svg width="43" height="23" viewBox="0 0 43 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M42.3033 22.52H0V0H42.3033V22.52ZM2.144 20.376H40.1577V2.144H2.144V20.376Z" fill="white"/>
+                                    <path d="M10.0747 5.10296L7.73257 6.50727V17.419L10.0747 16.0131V5.10136V5.10296ZM18.2401 5.10296L15.898 6.50727V17.419L18.2401 16.0131V5.10136V5.10296ZM26.4039 5.10296L24.0618 6.50727V17.419L26.4039 16.0131V5.10136V5.10296ZM34.5694 5.10296L32.2273 6.50727V17.419L34.5694 16.0131V5.10136V5.10296Z" fill="white"/>
+                                </svg>                                  
+                            </span>
+                            <p class="desc">4M shipments tracked till date on Cargoes Flow</p>
+                        </div>
+                        <div><img src="./assets/img/scroll (1).png" alt="Ship" /></div>
+                        <div class="next"></div>
+                        <div class="content warning">
+                            <span>
+                                <svg width="34" height="29" viewBox="0 0 34 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5438 9.71948L18.2961 11.3129V19.4393L15.5438 17.8459V9.71948ZM15.5438 19.5986L18.2961 21.192V25.0162L15.5438 23.4228V19.5986Z" fill="#F9FCFF"/>
+                                    <path d="M34 29H0L17 0L34 29ZM4.53333 26.4506H29.4667L17 5.0989L4.53333 26.4506Z" fill="#F9FCFF"/>
+                                </svg>                               
+                            </span>
+                            <p class="desc">Stay on top with predictive ETA & Geofence alerts</p>
+                        </div>
+                        <div><img src="./assets/img/scroll (2).png" alt="Ship" /></div>
+                    </div>
+                    <div class="introCol lastColumn">
+                        <div><img src="./assets/img/scroll (3).png" alt="Ship" /></div>
+                        <div class="content danger">
+                            <span>
+                                <svg width="53" height="29" viewBox="0 0 53 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.823 7.43143C25.6729 7.63063 26.3369 8.11536 26.8482 8.81256C27.0075 9.03169 27.1403 9.26409 27.2466 9.50313C27.6251 9.51641 28.0035 9.52969 28.3887 9.54297C28.5082 9.54297 28.6277 9.54961 28.7406 9.54961C28.6941 9.35041 28.6343 9.15785 28.548 8.97857C28.1031 8.06224 27.5255 7.23887 26.6158 6.7143C26.2638 6.5151 25.9053 6.30262 25.5202 6.1831C24.7101 5.93742 23.8801 5.77142 23.0235 5.99718C22.7579 6.06358 22.6317 5.96398 22.6118 5.69174C22.572 5.09413 22.3595 4.54964 22.1271 4.00516C21.556 2.69707 20.6397 1.71434 19.398 1.03041C18.827 0.711691 18.2161 0.499208 17.5654 0.373046C16.8482 0.233605 16.1311 0.226968 15.4206 0.326569C14.4977 0.45273 13.6411 0.771453 12.8576 1.28938C11.8948 1.92682 11.1511 2.75019 10.6464 3.78604C10.3675 4.35708 10.175 4.96133 10.0754 5.58549C10.0289 5.8511 9.98906 5.8843 9.71682 5.89094C9.5641 5.89758 9.41138 5.8843 9.2653 5.91086C8.38217 6.07686 7.55216 6.33582 6.80847 6.87367C6.17103 7.33183 5.69958 7.91615 5.31446 8.57352C5.04222 9.03832 4.86958 9.54961 4.8231 10.0941C4.80317 10.2867 4.73013 10.446 4.51101 10.4925C3.7806 10.6452 3.1498 11.0171 2.58539 11.4752C1.69563 12.2056 1.06482 13.1153 0.772658 14.2508C0.593377 14.9413 0.526977 15.6319 0.619938 16.3225C0.759379 17.3716 1.15114 18.3278 1.86163 19.1312C2.7846 20.1803 3.92669 20.8244 5.30118 20.9772C5.30782 20.5124 5.32774 20.0475 5.36758 19.5894C4.25205 19.4167 3.33572 18.8523 2.64516 17.843C2.22019 17.2189 2.02763 16.5217 1.96787 15.7979C1.93467 15.4327 2.01435 15.0476 2.10067 14.6824C2.29323 13.8656 2.72484 13.1751 3.36228 12.6372C3.85365 12.2189 4.40477 11.8869 5.06214 11.7807C5.31446 11.7408 5.56678 11.701 5.82575 11.6611C6.07807 11.6279 6.11791 11.6014 6.11127 11.3358C6.11127 10.8975 6.10463 10.4527 6.23743 10.0277C6.41671 9.43673 6.68895 8.89888 7.1272 8.44736C7.63848 7.91616 8.24937 7.55759 8.96649 7.38495C9.51762 7.25215 10.0754 7.28535 10.6265 7.39159C10.8656 7.43807 11.1046 7.48455 11.3901 7.53767C11.3901 7.22559 11.3968 6.94671 11.3901 6.67446C11.3702 5.63198 11.6624 4.67581 12.24 3.82588C12.7845 3.02243 13.5017 2.40491 14.4113 2.02642C15.1019 1.7409 15.819 1.58818 16.576 1.62138C17.313 1.65458 18.0103 1.86042 18.661 2.20571C19.823 2.81659 20.6065 3.77276 21.0448 4.99453C21.2838 5.66518 21.3502 6.36902 21.2971 7.08615C21.2705 7.43807 21.2572 7.78335 21.2307 8.16848C21.7353 7.94272 22.1802 7.73024 22.6251 7.53103C23.3356 7.21895 24.0793 7.25879 24.823 7.43143Z" fill="white"/>
+                                    <path d="M5.55352 21.2826L5.26136 21.2494C3.8603 21.0967 2.65181 20.4459 1.6558 19.3171C0.938675 18.507 0.500434 17.511 0.347713 16.3623C0.254752 15.6784 0.30787 14.948 0.507072 14.191C0.799235 13.0556 1.43668 12.0728 2.40613 11.276C3.08342 10.7183 3.75406 10.3796 4.45127 10.2335C4.49775 10.2269 4.53759 10.2136 4.55087 10.0742C4.60399 9.50977 4.78327 8.95864 5.07543 8.44736C5.51368 7.69039 6.02496 7.10607 6.64249 6.66118C7.33305 6.16318 8.12322 5.85773 9.20555 5.65189C9.32507 5.63197 9.44459 5.63197 9.55083 5.63197H9.69027C9.73011 5.63197 9.76332 5.62533 9.78324 5.62533C9.78988 5.60541 9.78988 5.57885 9.79652 5.54565C9.90276 4.88829 10.1086 4.25748 10.3941 3.67316C10.912 2.62403 11.6889 1.74754 12.6982 1.07689C13.5083 0.539049 14.4047 0.200405 15.3742 0.0676039C16.1378 -0.038637 16.8881 -0.0187176 17.6052 0.120724C18.2825 0.253525 18.9266 0.485926 19.5176 0.804649C20.819 1.52178 21.7752 2.56427 22.3595 3.90556C22.6318 4.52972 22.8243 5.07421 22.8708 5.67845C22.8708 5.71829 22.8774 5.74485 22.8841 5.75813C22.8974 5.75813 22.9173 5.75149 22.9505 5.74485C23.9066 5.49253 24.823 5.69837 25.5932 5.93077C25.9983 6.05694 26.3701 6.26942 26.7287 6.47526L26.7486 6.48854C27.5852 6.96663 28.2293 7.72359 28.7871 8.86568C28.8933 9.07816 28.9531 9.30393 28.9996 9.48985L29.0859 9.82849L28.6078 9.81521C28.5348 9.81521 28.4551 9.80857 28.382 9.80857C28.0368 9.80193 27.6649 9.78865 27.24 9.76873L27.074 9.76209L27.0076 9.60937C26.908 9.38361 26.7884 9.17112 26.6423 8.97192C26.151 8.30128 25.5202 7.86967 24.7698 7.69039C23.9531 7.49783 23.309 7.52439 22.7314 7.78335C22.4259 7.91615 22.1205 8.05559 21.8017 8.20831C21.649 8.27471 21.4963 8.34776 21.3369 8.4208L20.9385 8.60008L20.9651 8.16184C20.9717 8.04232 20.9784 7.92279 20.985 7.80991C20.9983 7.55759 21.0116 7.31855 21.0315 7.07287C21.0913 6.35574 21.0116 5.68509 20.7991 5.09413C20.3741 3.90556 19.6105 3.01579 18.5415 2.45139C17.9107 2.11938 17.2467 1.93346 16.5694 1.90026C15.8921 1.86706 15.2214 1.99322 14.5242 2.28539C13.6942 2.63067 13.0037 3.20171 12.4725 3.99188C11.9213 4.80196 11.6491 5.71165 11.669 6.68774V7.87631L10.5867 7.67047C9.98908 7.55759 9.49771 7.55095 9.03955 7.66383C8.39546 7.81655 7.81778 8.14855 7.33305 8.6532C6.96121 9.03832 6.68897 9.51641 6.50969 10.1273C6.39017 10.5191 6.39681 10.944 6.39681 11.3557C6.39681 11.7939 6.21752 11.9002 5.87888 11.9467C5.6996 11.9732 5.51368 11.9998 5.34103 12.0263C5.26799 12.0396 5.19496 12.0463 5.12856 12.0595C4.59735 12.1392 4.09935 12.3982 3.55486 12.8564C2.95726 13.3676 2.55885 14.0051 2.37957 14.7621C2.29989 15.0874 2.22685 15.4593 2.25341 15.7913C2.31317 16.5482 2.52565 17.179 2.88421 17.7102C3.52166 18.6465 4.35167 19.1777 5.42736 19.3437L5.67304 19.3835L5.65312 19.6292C5.61992 20.0409 5.6 20.4725 5.59336 21.0037L5.55352 21.2826ZM9.52427 6.16982C9.44459 6.16982 9.37155 6.16982 9.31179 6.1831C8.3025 6.36902 7.57874 6.65454 6.96121 7.09943C6.41009 7.49783 5.94528 8.02903 5.54688 8.7196C5.28792 9.16448 5.13519 9.64257 5.08871 10.1273C5.04887 10.5722 4.78327 10.7183 4.57079 10.7581C3.9599 10.8843 3.36894 11.1897 2.75805 11.6877C1.86165 12.4181 1.29724 13.2813 1.03164 14.3238C0.852357 15.021 0.805875 15.685 0.885556 16.2959C1.025 17.3384 1.4234 18.2348 2.06085 18.9652C2.8975 19.9147 3.8935 20.4924 5.03559 20.6783C5.04223 20.3663 5.05551 20.0807 5.07543 19.8085C3.97318 19.5761 3.08341 18.9719 2.41941 17.9891C2.00108 17.3782 1.76868 16.6678 1.69564 15.8178C1.66244 15.4061 1.74876 14.9878 1.83508 14.6226C2.04093 13.7528 2.49245 13.0224 3.18302 12.438C3.80054 11.9135 4.38487 11.6213 5.01567 11.5217C5.08871 11.5084 5.15512 11.5018 5.22816 11.4885C5.40744 11.4619 5.59336 11.4287 5.77928 11.4022C5.7992 11.4022 5.81912 11.3955 5.83904 11.3955V11.3424C5.83904 10.9108 5.8324 10.4261 5.97184 9.95465C6.17768 9.26409 6.48977 8.71296 6.92137 8.26808C7.47914 7.69039 8.14314 7.31191 8.88683 7.13263C9.41803 7.00647 9.99572 7.00647 10.6597 7.13263L11.1112 7.21895V6.6811C11.0913 5.59213 11.3968 4.58285 12.0077 3.6798C12.5986 2.80331 13.3755 2.16586 14.2985 1.78074C15.0754 1.46202 15.819 1.32258 16.576 1.35578C17.333 1.38898 18.07 1.59482 18.7739 1.96666C19.9624 2.59746 20.8124 3.58019 21.2838 4.90157C21.5229 5.56557 21.6092 6.30926 21.5494 7.10607C21.5295 7.31191 21.5229 7.52439 21.5096 7.74351C21.5295 7.73687 21.5494 7.72359 21.576 7.71695C21.9013 7.57087 22.2068 7.43143 22.5122 7.29199C23.1962 6.98654 23.9531 6.94671 24.8894 7.16583C25.7659 7.37167 26.4963 7.86967 27.0673 8.64656C27.2068 8.83248 27.3196 9.02504 27.4259 9.23089C27.7778 9.24417 28.0965 9.25745 28.3887 9.26409C28.3688 9.20432 28.3422 9.13792 28.3156 9.0848C27.8044 8.04231 27.2267 7.35839 26.4896 6.93343L26.4697 6.92678C26.1377 6.73422 25.7924 6.53502 25.4471 6.43542C24.7499 6.22294 23.9199 6.03702 23.0899 6.25614C22.8841 6.30926 22.7114 6.28934 22.5786 6.19638C22.4458 6.09678 22.3661 5.93742 22.3529 5.71165C22.313 5.18045 22.1404 4.68909 21.8881 4.1114C21.3502 2.88299 20.4737 1.92682 19.2719 1.26281C18.734 0.964012 18.1431 0.75153 17.5189 0.632009C16.8615 0.505848 16.171 0.492567 15.4605 0.585528C14.5707 0.705049 13.7474 1.01713 13.0037 1.5085C12.0674 2.12602 11.3569 2.92947 10.8788 3.89892C10.6132 4.43676 10.4273 5.02109 10.3277 5.62533C10.2613 6.01046 10.1219 6.13662 9.72347 6.15654H9.55747C9.54419 6.16982 9.53091 6.16982 9.52427 6.16982Z" fill="white"/>
+                                    <path d="M19.9492 23.341C19.4246 24.0515 18.7473 24.6292 17.9107 25.0741C17.074 25.519 16.0714 25.7381 14.8961 25.7381C13.8868 25.7381 12.9506 25.5655 12.1006 25.2268C11.2441 24.8815 10.507 24.4034 9.89614 23.7859C9.27861 23.1684 8.79389 22.4313 8.44861 21.5814C8.09668 20.7249 7.92404 19.7886 7.92404 18.766C7.92404 17.7302 8.10332 16.7873 8.45525 15.9307C8.81381 15.0742 9.30517 14.3438 9.93598 13.7395C10.5668 13.1353 11.3105 12.6638 12.1737 12.3252C13.0369 11.9865 13.9731 11.8205 14.9824 11.8205C15.4339 11.8205 15.8855 11.867 16.3503 11.9533C16.8084 12.0397 17.2533 12.1725 17.6783 12.3451C18.1033 12.5177 18.4884 12.7369 18.8403 12.9892C19.1922 13.2481 19.491 13.5403 19.7367 13.879L18.2759 15.0011C17.9505 14.5496 17.4924 14.1844 16.9014 13.8856C16.3104 13.5934 15.6664 13.4473 14.9824 13.4473C14.2122 13.4473 13.515 13.5868 12.8974 13.8657C12.2799 14.1446 11.7554 14.5297 11.3171 15.0144C10.8789 15.4991 10.5469 16.0635 10.3078 16.7076C10.0688 17.3517 9.94926 18.0356 9.94926 18.7594C9.94926 19.5097 10.0621 20.2069 10.2945 20.8577C10.5269 21.5084 10.8589 22.0728 11.2839 22.5509C11.7155 23.029 12.2401 23.4074 12.8576 23.6797C13.4751 23.9519 14.1657 24.0914 14.9227 24.0914C15.673 24.0914 16.3503 23.9386 16.9612 23.6398C17.572 23.341 18.0767 22.9028 18.4751 22.3318L19.9492 23.341ZM34.9756 18.7594C34.9756 19.782 34.7964 20.7182 34.4444 21.5748C34.0859 22.4314 33.6012 23.1684 32.977 23.7793C32.3528 24.3968 31.6091 24.8749 30.7526 25.2202C29.896 25.5655 28.9531 25.7315 27.9438 25.7315C26.9345 25.7315 25.9983 25.5588 25.1484 25.2202C24.2918 24.8749 23.5547 24.3968 22.9306 23.7793C22.3064 23.1618 21.8217 22.4247 21.4698 21.5748C21.1178 20.7182 20.9452 19.782 20.9452 18.7594C20.9452 17.7235 21.1178 16.7807 21.4698 15.9241C21.8217 15.0675 22.3064 14.3371 22.9306 13.7329C23.5547 13.1286 24.2918 12.6572 25.1484 12.3185C26.0049 11.9799 26.9345 11.8139 27.9438 11.8139C28.9531 11.8139 29.8894 11.9799 30.7526 12.3185C31.6158 12.6572 32.3528 13.1286 32.977 13.7329C33.6012 14.3371 34.0925 15.0675 34.4444 15.9241C34.7964 16.774 34.9756 17.7235 34.9756 18.7594ZM32.9703 18.7594C32.9703 18.0356 32.8508 17.3517 32.6118 16.7076C32.3727 16.0635 32.0407 15.4991 31.6025 15.0144C31.1642 14.5297 30.6397 14.1446 30.0222 13.8657C29.4046 13.5868 28.7074 13.4473 27.9372 13.4473C27.1736 13.4473 26.4896 13.5868 25.8721 13.8657C25.2546 14.1446 24.73 14.5297 24.2984 15.0144C23.8668 15.4991 23.5348 16.0635 23.2958 16.7076C23.0567 17.3517 22.9372 18.0356 22.9372 18.7594C22.9372 19.4964 23.0567 20.187 23.2958 20.8377C23.5348 21.4885 23.8668 22.0529 24.3051 22.531C24.7433 23.009 25.2679 23.3875 25.8788 23.6598C26.4896 23.932 27.1736 24.0714 27.9372 24.0714C28.7008 24.0714 29.3914 23.932 30.0155 23.6598C30.6397 23.3875 31.1709 23.009 31.6091 22.531C32.0474 22.0529 32.3794 21.4885 32.6184 20.8377C32.8508 20.187 32.9703 19.4898 32.9703 18.7594Z" fill="white"/>
+                                    <path d="M52.6714 20.9506V21.2494C52.6714 21.349 52.6647 21.4486 52.6515 21.5482H45.5997C45.613 21.92 45.6993 22.272 45.852 22.5973C46.0048 22.9227 46.2172 23.2082 46.4762 23.4539C46.7352 23.6929 47.0406 23.8855 47.3859 24.0183C47.7312 24.1577 48.0964 24.2242 48.4815 24.2242C49.0791 24.2242 49.597 24.0913 50.0353 23.8324C50.4735 23.5734 50.8122 23.2547 51.0645 22.8762L52.2995 23.8656C51.8281 24.4964 51.2703 24.9546 50.6262 25.2534C49.9822 25.5522 49.2717 25.6982 48.4815 25.6982C47.8109 25.6982 47.1867 25.5854 46.609 25.3596C46.038 25.1338 45.54 24.8217 45.1283 24.4167C44.7166 24.0117 44.3912 23.5203 44.1522 22.9493C43.9131 22.3782 43.7936 21.7408 43.7936 21.0436C43.7936 20.3596 43.9065 19.7222 44.1389 19.1445C44.3713 18.5668 44.69 18.0688 45.1017 17.6571C45.5134 17.2454 46.0048 16.9267 46.5625 16.6943C47.1269 16.4619 47.7312 16.349 48.3819 16.349C49.0326 16.349 49.6236 16.4553 50.1548 16.6678C50.686 16.8802 51.1375 17.1857 51.5027 17.5841C51.8746 17.9825 52.1535 18.4672 52.3527 19.0316C52.5718 19.596 52.6714 20.2401 52.6714 20.9506ZM50.8719 20.2401C50.8587 19.8882 50.7989 19.5628 50.6926 19.2574C50.5864 18.9519 50.4337 18.6863 50.2278 18.4606C50.022 18.2348 49.763 18.0555 49.4576 17.9294C49.1522 17.7966 48.7936 17.7302 48.3819 17.7302C48.0101 17.7302 47.6581 17.7966 47.3261 17.9294C46.9941 18.0622 46.7086 18.2348 46.4629 18.4606C46.2173 18.6863 46.018 18.9519 45.8653 19.2574C45.706 19.5628 45.6196 19.8882 45.5931 20.2401H50.8719ZM35.9517 27.2719L39.3713 23.9187C39.6436 23.6531 39.8694 23.3809 40.0287 23.1086C40.1947 22.8364 40.2744 22.5243 40.2744 22.1724C40.2744 21.754 40.1416 21.422 39.8694 21.1764C39.5971 20.9307 39.2651 20.8045 38.8601 20.8045C38.4351 20.8045 38.0898 20.9506 37.8309 21.2361C37.5719 21.5216 37.4125 21.8868 37.3528 22.3184L35.8853 22.0927C35.9252 21.7275 36.0314 21.3888 36.1974 21.0768C36.3634 20.7647 36.5759 20.4991 36.8348 20.2733C37.0938 20.0475 37.3992 19.8683 37.7445 19.7421C38.0898 19.6159 38.4683 19.5495 38.88 19.5495C39.2651 19.5495 39.6303 19.6027 39.9889 19.7155C40.3408 19.8218 40.6595 19.9878 40.9318 20.2136C41.204 20.4327 41.4298 20.7049 41.5891 21.0303C41.7551 21.349 41.8348 21.7275 41.8348 22.1524C41.8348 22.438 41.795 22.7036 41.7219 22.9493C41.6489 23.1949 41.5426 23.4273 41.4165 23.6465C41.2837 23.8656 41.1376 24.0714 40.965 24.264C40.7923 24.4632 40.6064 24.6491 40.4072 24.835L37.8508 27.2786H41.8481V28.6531H35.9517V27.2719Z" fill="white"/>
+                                </svg>                                                         
+                            </span>
+                            <p class="desc">Track your Carbon footprint for all active shipments</p>
+                        </div>
+                        <div class="next"></div>
+                        <div><img src="./assets/img/scroll (4).png" alt="Ship" /></div>
+                        <div class="content info">
+                            <span>
+                                <svg width="42" height="29" viewBox="0 0 42 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 15.1246V29H41.8052V0H0V15.1246ZM39.7008 3.56537V26.8909H2.10595V2.10281H39.7008V3.5638V3.56537Z" fill="white"/>
+                                    <path d="M34.6508 22.6866V9.85318L36.7568 11.1086V22.6866H34.6508ZM13.5254 11.096H18.3242L19.0774 10.0431L18.3242 8.99009H13.5254V11.096ZM30.657 22.6866V15.9043L32.763 17.1597V22.6866H30.657ZM26.6617 22.6866V12.1223L28.7677 13.3778V22.6866H26.6617ZM22.6679 22.6866V17.8376L24.7739 19.093V22.6866H22.6679Z" fill="white"/>
+                                    <path d="M20.9354 22.401H36.7568V24.507H20.9354V22.401ZM6.98939 11.0945C6.98939 10.9689 6.98939 10.8434 6.9988 10.7273C7.03019 9.95047 7.26244 9.19565 7.67359 8.53499C7.8211 8.30588 7.99372 8.09246 8.1883 7.90101C8.55237 7.54478 8.97764 7.25761 9.44372 7.05203C9.83446 6.88098 10.2425 6.75074 10.6615 6.66286C11.0899 6.57184 11.523 6.51064 11.9592 6.47925C12.3061 6.45101 12.6842 6.43688 13.1174 6.43061H14.0118C14.4481 6.43845 14.8294 6.45571 15.1809 6.4871C15.6282 6.52319 16.0707 6.59224 16.5085 6.69267C16.8852 6.77741 17.2539 6.89825 17.607 7.0536C18.0731 7.25761 18.4984 7.54635 18.8624 7.90258C19.057 8.09403 19.2281 8.30745 19.3772 8.53656C19.7883 9.19565 20.0206 9.95046 20.0519 10.7257C20.0598 10.8512 20.0629 10.9689 20.0629 11.0929H22.2834C22.2834 10.9517 22.2834 10.8073 22.2725 10.6519C22.2334 9.69251 21.9945 8.75181 21.571 7.89002C21.425 7.59814 21.2556 7.31881 21.0625 7.05517C20.4058 6.16683 19.5254 5.46835 18.5109 5.03082C16.9024 4.3121 15.1668 4.21481 13.5301 4.21481C11.8933 4.21481 10.1546 4.3121 8.54767 5.03082C7.53305 5.46804 6.65256 6.16658 5.99604 7.05517C5.80599 7.31918 5.63803 7.59841 5.49388 7.89002C5.07019 8.75165 4.83177 9.6925 4.79399 10.6519C4.78457 10.8073 4.78143 10.9517 4.78143 11.0929H6.99253L6.98939 11.0945ZM4.77045 19.0208H17.9695V21.1268H4.77045V19.0208ZM4.77045 15.6218H10.594V17.7277H4.77045V15.6218ZM4.77045 22.4167H15.6894V24.5226H4.77045V22.4167Z" fill="white"/>
+                                </svg>                                                         
+                            </span>
+                            <p class="desc">Personlise your own focussed dashbaord</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section01-info">
+                    <div class="listOfClients">
+                        <div class="clientContainer">
+                            <h5 class="h5">Trusted by 1200+ of the World’s Leading Brands</h5>
+                            <div class="clientList">
+                                <div>
+                                    <div>
+                                        <img src="./assets/img/company-logo1.svg" title="Client 01" class="clientImg" alt="Clients" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/company-logo2.svg" title="Client 01" class="clientImg" alt="Clients" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/company-logo3.svg" title="Client 01" class="clientImg" alt="Clients" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/company-logo4.svg" title="Client 01" class="clientImg" alt="Clients" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/company-logo5.svg" title="Client 01" class="clientImg" alt="Clients" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scrollDown">
+                            <div class="scrollDown-b" onclick="scrollToElement('section02')">
+                                <p>Scroll Down</p>
+                                <span>
+                                    <img src="./assets/img/scrollDown.svg" alt="Down Arrow" title="Navigation" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+        <section class="section02" id="section02">
+            <div class="container">
+                <div class="section02-head">
+                    <button class="btn btnCustom btn-warning">Main Features</button>
+                    <h3>Top 3 reasons large cargo owners use cargoes flow</h3>
+                    <p>CARGOES Flow - The enterprise tracking tool for intermodal shipments to give you supply chain visibility, mitigate delays and monetary risks.</p>
+                </div>
+                <div class="section02-main">
+                    <div class="section02In section02-content">
+                        <ul>
+                            <li class="active">
+                                <div>
+                                    <span>
+                                        <img src="./assets/img/EndToEndTracking.svg" alt="End To End Tracking" title="End To End Tracking"/>   
+                                    </span>
+                                    <span>
+                                        <p>Multiple data sources collated intelligently to provide you precise End to End tracking in a single view</p>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>
+                                        <img src="./assets/img/ETA.svg" alt="ETA" title="ETA"/>   
+                                    </span>
+                                    <span>
+                                        <p>Stay ahead with alerts and checks on Demurrage Detention costs, Flow predicted ETA</p>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span>
+                                        <img src="./assets/img/Dashboard.svg" alt="Dashboard" title="Dashboard"/>  
+                                    </span>
+                                    <span>
+                                        <p>Personalise dashboards to your experience on the tool to focus on what matters to <span class="hideForMobile"></span> you</p>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section02In section02-img">
+                        <img src="./assets/img/map.png" alt="" />
+                    </div>
+                </div>
+                <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book a demo</button>
+            </div>
+        </section>
+        <section class="section03" id="section03">
+            <div class="container">
+                <div class="section03-main">
+                    <div class="section03-content">
+                        <button class="btn btnCustom btn-success">Customer Success Stories</button>
+                        <h3>See how businesses benefit</h3>
+                        <p>Discover what our valued customers have to say about our services through these genuine reviews and testimonials.</p>
+
+                        <div class="clientCount">
+                            <h4>1200+</h4>
+                            <p>Clients all around the world.</p>
+                        </div>
+                        
+                        <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book a demo</button>
+                    </div>
+                    <div class="section03-stories">
+                        <ul>
+                            <li>
+                                <p>I think this is the first Spark application in the wild that I have joined as a paying customer. Pretty neat.</p>
+                                <div class="author">
+                                    <span>
+                                        <img src="./assets/img/user (1).svg" alt="" />
+                                    </span>
+                                    <span >
+                                        <p>Taylor Otwell</p>
+                                        <p>Creator of Laravel</p>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>I think this is the first Spark application in the wild that I have joined as a paying customer. Pretty neat.</p>
+                                <div class="author">
+                                    <span>
+                                        <img src="./assets/img/user (2).svg" alt="" />
+                                    </span>
+                                    <span>
+                                        <p>Taylor Otwell</p>
+                                        <p>Creator of Laravel</p>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>I think this is the first Spark application in the wild that I have joined as a paying customer. Pretty neat.</p>
+                                <div class="author">
+                                    <span>
+                                        <img src="./assets/img/user (3).svg" alt="" />
+                                    </span>
+                                    <span>
+                                        <p>Taylor Otwell</p>
+                                        <p>Creator of Laravel</p>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <p>I think this is the first Spark application in the wild that I have joined as a paying customer. Pretty neat.</p>
+                                <div class="author">
+                                    <span>
+                                        <img src="./assets/img/user (4).svg" alt="" />
+                                    </span>
+                                    <span>
+                                        <p>Taylor Otwell</p>
+                                        <p>Creator of Laravel</p>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section04" id="section04">
+            <div class="container">
+                <div class="section04-head">
+                    <button class="btn btnCustom btn-info">Explore The Product</button>
+                    <h3>Unlimited features and possibilities</h3>
+                    <p>Container tracking has never been so easy, discover the unlimited features and possibilities that come with Cargoes Flow.</p>
+                </div>
+                <section class="section04-mini">
+                    <div class="section04-content">
+                        <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                        <p>Make intelligent future decisions by measuring performance of carriers, lanes and adherence to promised ETAs by different parties and keeping a tap on your Carbon footprint.</p>
+                        <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book A DEMO</button>
+                        <div class="secArrow">
+                            <span>
+                                <img src="./assets/img/arrowLeft.svg" alt="Left Arrow" title="Left Arrow" />                                
+                            </span>
+                            <span>
+                                <img src="./assets/img/arrowRight.svg" alt="Right Arrow" title="Right Arrow" />                                  
+                            </span>
+                        </div>
+                    </div>
+                    <div class="section04-img">
+                        <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="section05" id="section05">
+            <div class="container">
+                <div class="section05-head">
+                    <button class="btn btnCustom btn-warning">Getting Started</button>
+                    <h3>How cargoes flow works</h3>
+                    <p>Start tracking your containers in 3 easy steps by choosing a CARGOES Flow. You can do it in ~2 minutes. Without technical skills and extra people in the team.</p>
+                    <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book A DEMO</button>
+                </div>
+                <section class="sec05-main">
+                    <ul class="cardList">
+                        <li>
+                            <div>
+                                <img src="./assets/img/card (1).svg" alt="" />
+                                <h5>1.Sign Up</h5>
+                                <p>Join our enterprise container tracking platform and unlock seamless visibility into your cargo with just a few clicks.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./assets/img/card (2).svg" alt="" />
+                                <h5>2.Upload Container Details</h5>
+                                <p>Effortlessly input your container information, such as ID, origin, and destination, to initiate real-time tracking and stay informed throughout the entire journey.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="./assets/img/card (3).svg" alt="" />
+                                <h5>3.Start Tracking</h5>
+                                <p>Take control of your container's whereabouts instantly by activating tracking, ensuring complete transparency and peace of mind throughout the cargo's voyage.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <section class="section06" id="section06">
+            <div class="container">
+                <div class="section06-main">
+                    <div class="section06-content">
+                        <button class="btn btnCustom btn-success">Cargoes Flow Support</button>
+                        <h3>The help you need, when you need it</h3>
+                        <p>Guiding you towards tracking success: Personalized support every step of the way.</p>
+                        <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book A DEMO</button>
+                    </div>
+                    <div class="section06-support">
+                        <div class="sec06-rel">
+                            <img src="./assets/img/support.png" alt="" />
+                            <div class="sec06-abs">
+                                <span>
+                                    <svg width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.9318 15.7974C24.9916 15.7974 22.038 15.141 20.1462 13.8498C18.3209 12.6036 17.4329 10.6538 17.4329 7.88689C17.4329 5.11994 18.323 3.19808 20.1569 1.94974C22.0573 0.656347 25.0087 0 28.9318 0C32.8549 0 35.7848 0.656347 37.696 1.94974C39.5363 3.19808 40.4308 5.13924 40.4308 7.88475C40.4308 10.6303 39.5406 12.5993 37.7067 13.8476C35.8063 15.141 32.8527 15.7974 28.9318 15.7974ZM28.9318 2.82701C27.6105 2.82701 26.4651 2.88278 25.5278 2.99432C24.5154 3.11658 23.7046 3.35037 23.0526 3.71287C22.3447 4.10324 21.8257 4.66092 21.5039 5.37518C21.2058 6.04226 21.0621 6.86376 21.0621 7.88475C21.0621 8.90573 21.2058 9.72724 21.5039 10.3943C21.8235 11.1064 22.3405 11.6684 23.044 12.0674C23.6896 12.4341 24.524 12.6808 25.5278 12.8009C26.4587 12.9125 27.6041 12.9682 28.9297 12.9682C30.2552 12.9682 31.4006 12.9125 32.3315 12.8009C33.331 12.6808 34.1676 12.4341 34.8153 12.0674C35.5189 11.6684 36.0379 11.1064 36.3554 10.3943C36.6535 9.72939 36.7973 8.90788 36.7973 7.88475C36.7973 6.86162 36.6535 6.04226 36.3554 5.37518C36.0358 4.66307 35.5167 4.10324 34.8089 3.71287C34.1547 3.35252 33.3461 3.11658 32.3337 2.99432C31.3985 2.88493 30.2531 2.82701 28.9318 2.82701Z" fill="#0080AF"/>
+                                        <path d="M40.1219 36.1978L42.3054 23.5085H16.043L18.2265 36.1978H40.1241H40.1219ZM38.8092 26.3869L37.5759 33.3193H20.7725L19.5392 26.3869H38.8092Z" fill="#0080AF"/>
+                                        <path d="M13.3596 20.4282H44.5061V32.9074L47.3846 30.6038V17.5497H10.4811V30.6038L13.3596 32.9074V20.4282ZM48.3262 34.0464L46.0762 35.8438L52.659 42.0298H5.20461L11.7874 35.8438L9.53736 34.0464L0.532959 42.9607V49.5799H57.8154V42.9607L48.3262 34.0464ZM3.41145 46.7014V44.9061H54.9347V46.7014H3.41359H3.41145Z" fill="#0080AF"/>
+                                    </svg>                                                                              
+                                </span>
+                                <span class="sec06-flex">
+                                    <h6>Customer Support</h6>
+                                    <p>Submit a ticket to our 1on1 Support Desk for any problems or questions you’ve got with the Cargoes Flow.</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="finalSection" id="finalSection">
+            <div class="container">
+                <div class="finalContent">
+                    <h3 class="title">See all that you can accomplish with cargoes flow</h3>
+                    <div class="btnGrp">
+                        <button class="btn btn-primary text-uppercase" onclick="popupToggle(true)">Book A DEMO</button>
+                        <button class="btn btn-outline-info text-uppercase">Try for Free</button>  
+                    </div>
+                    <ul class="listCont">
+                        <li>
+                            <span>
+                                <svg viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.9318 15.7974C24.9916 15.7974 22.038 15.141 20.1462 13.8498C18.3209 12.6036 17.4329 10.6538 17.4329 7.88689C17.4329 5.11994 18.323 3.19808 20.1569 1.94974C22.0573 0.656347 25.0087 0 28.9318 0C32.8549 0 35.7848 0.656347 37.696 1.94974C39.5363 3.19808 40.4308 5.13924 40.4308 7.88475C40.4308 10.6303 39.5406 12.5993 37.7067 13.8476C35.8063 15.141 32.8527 15.7974 28.9318 15.7974ZM28.9318 2.82701C27.6105 2.82701 26.4651 2.88278 25.5278 2.99432C24.5154 3.11658 23.7046 3.35037 23.0526 3.71287C22.3447 4.10324 21.8257 4.66092 21.5039 5.37518C21.2058 6.04226 21.0621 6.86376 21.0621 7.88475C21.0621 8.90573 21.2058 9.72724 21.5039 10.3943C21.8235 11.1064 22.3405 11.6684 23.044 12.0674C23.6896 12.4341 24.524 12.6808 25.5278 12.8009C26.4587 12.9125 27.6041 12.9682 28.9297 12.9682C30.2552 12.9682 31.4006 12.9125 32.3315 12.8009C33.331 12.6808 34.1676 12.4341 34.8153 12.0674C35.5189 11.6684 36.0379 11.1064 36.3554 10.3943C36.6535 9.72939 36.7973 8.90788 36.7973 7.88475C36.7973 6.86162 36.6535 6.04226 36.3554 5.37518C36.0358 4.66307 35.5167 4.10324 34.8089 3.71287C34.1547 3.35252 33.3461 3.11658 32.3337 2.99432C31.3985 2.88493 30.2531 2.82701 28.9318 2.82701Z" fill="#0080AF"/>
+                                    <path d="M40.1219 36.1978L42.3054 23.5085H16.043L18.2265 36.1978H40.1241H40.1219ZM38.8092 26.3869L37.5759 33.3193H20.7725L19.5392 26.3869H38.8092Z" fill="#0080AF"/>
+                                    <path d="M13.3596 20.4282H44.5061V32.9074L47.3846 30.6038V17.5497H10.4811V30.6038L13.3596 32.9074V20.4282ZM48.3262 34.0464L46.0762 35.8438L52.659 42.0298H5.20461L11.7874 35.8438L9.53736 34.0464L0.532959 42.9607V49.5799H57.8154V42.9607L48.3262 34.0464ZM3.41145 46.7014V44.9061H54.9347V46.7014H3.41359H3.41145Z" fill="#0080AF"/>
+                                </svg>
+                            </span>
+                            <p>No features limitations</p>
+                        </li>
+                        <li>
+                            <span>
+                                <svg width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.9318 15.7974C24.9916 15.7974 22.038 15.141 20.1462 13.8498C18.3209 12.6036 17.4329 10.6538 17.4329 7.88689C17.4329 5.11994 18.323 3.19808 20.1569 1.94974C22.0573 0.656347 25.0087 0 28.9318 0C32.8549 0 35.7848 0.656347 37.696 1.94974C39.5363 3.19808 40.4308 5.13924 40.4308 7.88475C40.4308 10.6303 39.5406 12.5993 37.7067 13.8476C35.8063 15.141 32.8527 15.7974 28.9318 15.7974ZM28.9318 2.82701C27.6105 2.82701 26.4651 2.88278 25.5278 2.99432C24.5154 3.11658 23.7046 3.35037 23.0526 3.71287C22.3447 4.10324 21.8257 4.66092 21.5039 5.37518C21.2058 6.04226 21.0621 6.86376 21.0621 7.88475C21.0621 8.90573 21.2058 9.72724 21.5039 10.3943C21.8235 11.1064 22.3405 11.6684 23.044 12.0674C23.6896 12.4341 24.524 12.6808 25.5278 12.8009C26.4587 12.9125 27.6041 12.9682 28.9297 12.9682C30.2552 12.9682 31.4006 12.9125 32.3315 12.8009C33.331 12.6808 34.1676 12.4341 34.8153 12.0674C35.5189 11.6684 36.0379 11.1064 36.3554 10.3943C36.6535 9.72939 36.7973 8.90788 36.7973 7.88475C36.7973 6.86162 36.6535 6.04226 36.3554 5.37518C36.0358 4.66307 35.5167 4.10324 34.8089 3.71287C34.1547 3.35252 33.3461 3.11658 32.3337 2.99432C31.3985 2.88493 30.2531 2.82701 28.9318 2.82701Z" fill="#0080AF"/>
+                                    <path d="M40.1219 36.1978L42.3054 23.5085H16.043L18.2265 36.1978H40.1241H40.1219ZM38.8092 26.3869L37.5759 33.3193H20.7725L19.5392 26.3869H38.8092Z" fill="#0080AF"/>
+                                    <path d="M13.3596 20.4282H44.5061V32.9074L47.3846 30.6038V17.5497H10.4811V30.6038L13.3596 32.9074V20.4282ZM48.3262 34.0464L46.0762 35.8438L52.659 42.0298H5.20461L11.7874 35.8438L9.53736 34.0464L0.532959 42.9607V49.5799H57.8154V42.9607L48.3262 34.0464ZM3.41145 46.7014V44.9061H54.9347V46.7014H3.41359H3.41145Z" fill="#0080AF"/>
+                                </svg>
+                            </span>
+                            <p>No payment info required</p>
+                        </li>
+                        <li>
+                            <span>
+                                <svg width="58" height="50" viewBox="0 0 58 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.9318 15.7974C24.9916 15.7974 22.038 15.141 20.1462 13.8498C18.3209 12.6036 17.4329 10.6538 17.4329 7.88689C17.4329 5.11994 18.323 3.19808 20.1569 1.94974C22.0573 0.656347 25.0087 0 28.9318 0C32.8549 0 35.7848 0.656347 37.696 1.94974C39.5363 3.19808 40.4308 5.13924 40.4308 7.88475C40.4308 10.6303 39.5406 12.5993 37.7067 13.8476C35.8063 15.141 32.8527 15.7974 28.9318 15.7974ZM28.9318 2.82701C27.6105 2.82701 26.4651 2.88278 25.5278 2.99432C24.5154 3.11658 23.7046 3.35037 23.0526 3.71287C22.3447 4.10324 21.8257 4.66092 21.5039 5.37518C21.2058 6.04226 21.0621 6.86376 21.0621 7.88475C21.0621 8.90573 21.2058 9.72724 21.5039 10.3943C21.8235 11.1064 22.3405 11.6684 23.044 12.0674C23.6896 12.4341 24.524 12.6808 25.5278 12.8009C26.4587 12.9125 27.6041 12.9682 28.9297 12.9682C30.2552 12.9682 31.4006 12.9125 32.3315 12.8009C33.331 12.6808 34.1676 12.4341 34.8153 12.0674C35.5189 11.6684 36.0379 11.1064 36.3554 10.3943C36.6535 9.72939 36.7973 8.90788 36.7973 7.88475C36.7973 6.86162 36.6535 6.04226 36.3554 5.37518C36.0358 4.66307 35.5167 4.10324 34.8089 3.71287C34.1547 3.35252 33.3461 3.11658 32.3337 2.99432C31.3985 2.88493 30.2531 2.82701 28.9318 2.82701Z" fill="#0080AF"/>
+                                    <path d="M40.1219 36.1978L42.3054 23.5085H16.043L18.2265 36.1978H40.1241H40.1219ZM38.8092 26.3869L37.5759 33.3193H20.7725L19.5392 26.3869H38.8092Z" fill="#0080AF"/>
+                                    <path d="M13.3596 20.4282H44.5061V32.9074L47.3846 30.6038V17.5497H10.4811V30.6038L13.3596 32.9074V20.4282ZM48.3262 34.0464L46.0762 35.8438L52.659 42.0298H5.20461L11.7874 35.8438L9.53736 34.0464L0.532959 42.9607V49.5799H57.8154V42.9607L48.3262 34.0464ZM3.41145 46.7014V44.9061H54.9347V46.7014H3.41359H3.41145Z" fill="#0080AF"/>
+                                </svg>
+                            </span>
+                            <p>Responsive support for all your questions and concerns</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="scrollUpFix">
+            <img src="./assets/img/upArrowL.svg" alt="Scroll Top" title="Scroll Top" id="scrollLight" />
+            
+            <img src="./assets/img/upArrowD.svg" alt="Scroll Top" title="Scroll Top" id="scrollDark" onclick="demo.scrollTop()" />
+        </section>
+        <section class="bookPopup hidePop" id="bookPopup">
+            <div class="popConatiner">
+                <div class="description">
+                    <h5>Contact our sales team for a personalized demo</h5>
+                    <p>We look forward to getting acquainted with you and addressing any questions you may have about Cargoes Flow.</p>
+                    <ul class="quesContent">
+                        <li>Learn how to track your container</li>
+                        <li>Get pricing information</li>
+                        <li>Explore use cases for your business</li>
+                    </ul>      
+                    <h6>Incredible companies use Cargoes Flow</h6>
+                    <ul class="clientFlow">
+                        <li><img src="./assets/img/company-logo1.svg" alt="Top Cliens" title="Top Clients" /></li>
+                        <li><img src="./assets/img/company-logo2.svg" alt="Top Cliens" title="Top Clients" /></li>
+                        <li><img src="./assets/img/company-logo3.svg" alt="Top Cliens" title="Top Clients" /></li>
+                    </ul>
+                </div>
+                <div class="formDemo">
+                    <div class="firstStage" id="firstStage">
+                        <h4>Book a Demo</h4>
+                        <p>Complete the form below and a representitive will be in touch shortly.</p>
+                        <img src="./assets/img/Close icon.svg" class="closeIc" alt="Close" title="close" onclick="popupToggle(false)" />
+
+                        <form class="popForm">
+                            <div class="formRow">
+                                <input type="text" class="formInp" placeholder="Name" />
+                            </div>
+                            <div class="formRow">
+                                <input type="text" class="formInp" placeholder="Work Email" />
+                            </div>
+                            <div class="formRow">
+                                <select>
+                                    <option>+91</option>
+                                </select>
+                                <input type="text" class="formInp" placeholder="Phone No." />
+                            </div>
+                            <div class="formRow">
+                                <input type="text" class="formInp" placeholder="Company Name" />
+                            </div>
+                            <button class="btn btn-primary text-uppercase" onclick="scheduleBook()">schedule booking</button>
+                        </form>
+                    </div>
+                    <div class="secondStage" id="secondStage">
+                        <div class="message">
+                            <div>
+                                <img src="./assets/img/popup (1).svg" alt="Status" title="Status Message"/>
+                            </div>
+                            <h3>We have received your request.</h3>
+                            <p>We will get back to you in next 48 hrs.</p>
+                        </div>
+                        <button class="btn btn-primary text-uppercase" onclick="popupToggle(false)">Ok got it</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                &copy; <span id="year"></span> Cargoes. All rights reserved
+            </div>
+        </footer>
+    </div>
+    
+
+    <script type="text/javascript">
+
+        // Footer
+        let date = new Date();
+        document.getElementById("year").innerHTML=date.getFullYear();
+
+        /*Dynamic Text*/
+        let dynText = document.getElementById("dynText");
+
+        (function() {
+
+            let dynArr = [
+                {name:"Ocean",imgClass:"img001"},
+                {name:"Air",imgClass:"img002"},
+                {name:"Road",imgClass:"img003"},
+                {name:"Rail",imgClass:"img004"},
+                {name:"Inter-modal",imgClass:"img005"},
+                {name:"Outsourced Logistics",imgClass:"img006"}
+            ];
+
+            
+            document.getElementById("current").innerHTML=dynArr[0].name;
+            document.getElementById("next").innerHTML=dynArr[4].name;
+
+            document.getElementById("current").classList.add(dynArr[0].imgClass);
+            document.getElementById("next").classList.add(dynArr[4].imgClass);
+            
+
+            let count=1;
+            
+            setInterval(function(){
+
+                dynText1 = document.getElementById("current");
+                dynText2 = document.getElementById("next");
+
+                setTimeout(function() {
+                    dynText1.classList.add("notActive");
+                    dynText2.classList.add("active");
+                    
+                    setTimeout(function() {
+                        dynText1.remove();
+                        dynText2.classList.remove("active");
+                        dynText2.setAttribute("id", "current");
+
+                        let abc = document.createElement("span");
+                        abc.innerHTML = dynArr[1].name;
+                        abc.setAttribute("id", "next");
+                        dynText.appendChild(abc);
+                        dynText2.classList.add(dynArr[0].imgClass);
+
+                        let rmvElem = dynArr.shift();
+                        dynArr.push(rmvElem);
+                        
+                    }, 500);
+                },1500);
+            },4000)
+        })();
+
+        setInterval(function(){
+            toggleMenu();
+        },20)
+        /*Dynamic Text*/
+
+        
+        /*Menu for Mobile*/
+        function toggleMenu(){
+            window.addEventListener('scroll', function() {
+                if (window.innerWidth < 992) {
+                    // For Mobile Alone
+                    if (window.pageYOffset > 10) {
+                        document.getElementById('logo').classList.add('logoTemp');
+                        document.getElementById('menu').classList.remove('menuTemp');
+                    } else {
+                        document.getElementById('logo').classList.remove('logoTemp');
+                        document.getElementById('menu').classList.add('menuTemp');
+                    }
+                }else{
+                    // For Scroll Top
+                    if (window.pageYOffset > 10) {
+                        document.getElementById('scrollLight').style.display="none";
+                        document.getElementById('scrollDark').style.display="block";
+                    }else{
+                        document.getElementById('scrollDark').style.display="none";
+                        document.getElementById('scrollLight').style.display="block";
+                    }
+                }
+            });
+        } 
+        /*Menu for Mobile*/
+        
+        /*Menu*/
+        let navItems = document.querySelectorAll('.navContainer li');
+
+        navItems.forEach(navItem => {
+            navItem.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector('.navContainer li.active').classList.remove('active');
+                e.target.closest("li").classList.add('active');
+
+                let srcStr= e.target.getAttribute('onclick');
+                let firstInd = srcStr.indexOf("'");
+                let lastInd = srcStr.lastIndexOf("'");
+                let linkStr = srcStr.slice(firstInd+1,lastInd);
+                scrollToElement(linkStr);
+            });
+        });
+
+        var offsetBeh = 64;
+
+        function scrollToElement(elementId) {
+            const element = document.getElementById(elementId);
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offsetBeh;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }  
+        /*Menu*/
+
+        let demo = {};
+        demo.scrollTop = function (){
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        /*Popup*/
+        function popupToggle(param){
+            if(!param){
+                document.getElementById("bookPopup").classList.add("hidePop");
+                document.getElementsByTagName("body")[0].classList.remove("popupVisible");
+            }else{
+                document.getElementById("bookPopup").classList.remove("hidePop");
+                document.getElementsByTagName("body")[0].classList.add("popupVisible");
+            }
+        }
+
+        function scheduleBook(){
+            event.preventDefault();
+            document.getElementById("firstStage").style.display="none";
+            document.getElementById("secondStage").style.display="block";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
