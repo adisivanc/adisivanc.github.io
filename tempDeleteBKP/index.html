@@ -583,6 +583,60 @@
         let date = new Date();
         document.getElementById("year").innerHTML=date.getFullYear();
 
+        /*Dynamic Text*/
+        /*
+        let dynText = document.getElementById("dynText");
+
+        (function() {
+
+            let dynArr = [
+                {name:"Ocean",imgClass:"img001"},
+                {name:"Air",imgClass:"img002"},
+                {name:"Road",imgClass:"img003"},
+                {name:"Rail",imgClass:"img004"},
+                {name:"Inter-modal",imgClass:"img005"},
+                {name:"Outsourced Logistics",imgClass:"img006"}
+            ];
+
+            
+            document.getElementById("current").innerHTML=dynArr[0].name;
+            document.getElementById("next").innerHTML=dynArr[4].name;
+
+            document.getElementById("current").classList.add(dynArr[0].imgClass);
+            document.getElementById("next").classList.add(dynArr[4].imgClass);
+            
+
+            let count=1;
+            
+            setInterval(function(){
+
+                dynText1 = document.getElementById("current");
+                dynText2 = document.getElementById("next");
+
+                setTimeout(function() {
+                    dynText1.classList.add("notActive");
+                    dynText2.classList.add("active");
+                    
+                    setTimeout(function() {
+                        dynText1.remove();
+                        dynText2.classList.remove("active");
+                        dynText2.setAttribute("id", "current");
+
+                        let abc = document.createElement("span");
+                        abc.innerHTML = dynArr[1].name;
+                        abc.setAttribute("id", "next");
+                        dynText.appendChild(abc);
+                        dynText2.classList.add(dynArr[0].imgClass);
+
+                        let rmvElem = dynArr.shift();
+                        dynArr.push(rmvElem);
+                        
+                    }, 500);
+                },1500);
+            },4000)
+        })();
+        */
+
         setInterval(function(){
             toggleMenu();
         },20)
