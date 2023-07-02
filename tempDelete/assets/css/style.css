@@ -55,7 +55,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .navContainer { list-style-type: none; display: flex; gap:70px; justify-content: flex-end;}
 .navContainer > li { padding:18px 0 14px 0; border-bottom:4px solid transparent; }
 .navContainer > li.active { border-bottom-color:var(--primaryColor); }
-.navContainer a { text-decoration:none; color:#6a6a6d; font-weight:700; font-size:15px; }
+.navContainer a { text-decoration:none; color:#6a6a6d; font-weight:700; font-size:15px; user-select:none; }
 .navContainer > li.active a { color:var(--primaryColor); }
 
 #dynamic { height:26px;overflow:hidden; }
@@ -163,7 +163,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .section03-content h3{ font-family:var(--fontPrimary); text-transform:uppercase;font-size:30px; max-width:96%;margin:20px 0 30px 0; line-height: 50px; }
 .section03-content h4{ font-family:var(--fontPrimary); text-transform:uppercase;font-size:24px; font-weight: 600px; line-height: 24px; max-width:96%; }
 .section03-content p { max-width:72%;font-size:21px;line-height:30px; color:var(--primaryGray); }
-.section03-stories ul { list-style-type: none; display: flex; flex-wrap: wrap; gap: 24px; }
+.section03-stories ul { list-style-type: none; display: flex; flex-wrap: wrap; gap: 24px; scroll-snap-align:start; }
 .section03-stories li { background-color: #F2F2F2; padding:32px 30px; flex:1 1 225px; border-radius: 10px; }
 .section03-stories li:hover { background-color: #FFF5E5; }
 .section03-stories li img { width:48px; height:48px; border-radius:50%; overflow:hidden; }
@@ -270,7 +270,8 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .formDemo img.closeIc { position:absolute; right:12px; top:12px; }
 .popForm .btn { width:100%; margin-top: 21px; }
 .formRow { display:flex; gap:21px; }
-.formRow input { width:100%; font-size: 15px; padding:6px 10px; margin-bottom: 21px; }
+.formRow input { width:100%; font-size: 15px; padding:6px 10px; margin-bottom: 21px; border:1px solid var(--secGray); outline:none; caret-color:var(--primaryColor); }
+.formRow input:focus { border-color:var(--primaryColor); }
 .formRow select { width: 80px; font-size: 15px; padding:4px 5px; margin-bottom: 21px; }
 
 .secondStage { display:none; }
@@ -333,7 +334,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 
     #logo { position:absolute; left:0; top:0; transition: all 0.8s ease-in-out 0.2s; }
     #logo.logoTemp { left:-200px; }
-    #menu { overflow-x: auto; position:absolute; left:0; top:0; transition: all 1s ease-in-out 0.1s; width: 92vw; }
+    #menu { overflow-x: auto; touch-action:pan-x; position:absolute; left:0; top:0; transition: all 1s ease-in-out 0.1s; width: 92vw; }
     #menu.menuTemp { left:100vw }
 
     #menu::-webkit-scrollbar-track, .navContainer::-webkit-scrollbar-track, .section03-stories > ul::-webkit-scrollbar-track { background:transparent; }
@@ -344,7 +345,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
     .header img { max-height: 24px; }
     .header > div { position: relative; }
 
-    .navContainer { width: 100%; overflow-x: auto; justify-content: space-between; min-width: 570px; }
+    .navContainer { width: 100%; overflow-x: auto; touch-action:pan-x; justify-content: space-between; min-width: 570px; }
     .navContainer a { font-size: 0.95rem; white-space: nowrap; }
 
     .section01 { padding-bottom: 69px;}
@@ -378,7 +379,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
     .section03-content h3 { font-size: 24px; line-height: 36px; margin-bottom: 20px; }
     .clientCount { margin:58px 0 50px 0; }
     .section03-main > .section03-content {  flex: 1 1 100%; text-align:center; }
-    .section03-stories > ul { gap: 22px; flex-wrap:nowrap; max-width: 96vw; overflow: auto; }
+    .section03-stories > ul { gap: 22px; flex-wrap:nowrap; max-width: 96vw; overflow: auto; touch-action: pan-x; }
     .section03-stories li:nth-child(2n+1) { top: 0; }
     .section03-main .section03-stories { margin-left: 0; }
     .section03-stories li { flex: 1 1 320px; min-width:310px; }
