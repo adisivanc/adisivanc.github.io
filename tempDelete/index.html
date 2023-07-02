@@ -504,8 +504,7 @@
             </div>
         </section>
         <section class="scrollUpFix">
-            <img src="./assets/img/upArrowL.svg" alt="Scroll Top" title="Scroll Top" id="scrollLight" />
-            
+            <img src="./assets/img/upArrowL.svg" alt="Scroll Top" title="Scroll Top" id="scrollLight" onclick="demo.scrollTop()" />
             <img src="./assets/img/upArrowD.svg" alt="Scroll Top" title="Scroll Top" id="scrollDark" onclick="demo.scrollTop()" />
         </section>
         <section class="bookPopup hidePop" id="bookPopup">
@@ -615,15 +614,6 @@
                             document.getElementById('logo').classList.remove('logoTemp');
                             document.getElementById('menu').classList.add('menuTemp');
                         }
-                    }
-                }else{
-                    // For Scroll Top
-                    if (window.pageYOffset > 10) {
-                        document.getElementById('scrollLight').style.display="none";
-                        document.getElementById('scrollDark').style.display="block";
-                    }else{
-                        document.getElementById('scrollDark').style.display="none";
-                        document.getElementById('scrollLight').style.display="block";
                     }
                 }
             });

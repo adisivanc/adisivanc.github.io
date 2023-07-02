@@ -245,8 +245,10 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .actAsbg { position:absolute; left:0; top:0; right:0; bottom:0; background-color:rgba(0,0,0,.65); z-index:2; }
 .mainCon { position: relative; z-index:3; }
 
-.scrollUpFix { position:fixed; right:20px; bottom:30px; z-index:1200; }
-#scrollDark { display:none; }
+.scrollUpFix { position: relative; right: 20px; bottom: 30px; z-index: 1200; width: 44px; float: right; }
+.scrollUpFix img { position:absolute; left: 0; top:0; }
+.scrollUpFix #scrollDark { opacity:0; }
+.scrollUpFix:hover #scrollDark { opacity:1; }
 
 .footer { background-color:var(--primaryLight); padding:18px 0 }
 
