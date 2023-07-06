@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 1000 1000;"
+   viewBox="0 0 1000 1000"
+   y="0px"
+   x="0px"
+   id="icons"
+   version="1.1"><metadata
+     id="metadata14"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title>Icons</dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs12" /><title
+     id="title3">Icons</title><g
+     id="g4"><path
+       id="path6"
+       d="M963.4,26H36.6C16.4,26,0,42.4,0,62.6v634.7C0,717.6,16.4,734,36.6,734H263c0,1,0,2,0,3c0,130.9,106.1,237,237,237   s237-106.1,237-237c0-1,0-2,0-3h226.4c20.2,0,36.6-16.4,36.6-36.6V62.6C1000,42.4,983.6,26,963.4,26z M50.8,108.9   c0-17.7,14.4-32.1,32.2-32.1h834c17.7,0,32.1,14.4,32.1,32.1v53.7H50.8V108.9z M500,923.5c-103,0-186.5-83.5-186.5-186.5   S397,550.5,500,550.5S686.5,634,686.5,737S603,923.5,500,923.5z M949.2,651.1c0,17.7-14.4,32.1-32.2,32.1H730.9   C706.5,578.2,612.4,500,500,500s-206.5,78.2-230.9,183.2H83c-17.7,0-32.1-14.4-32.1-32.1V282.6h898.3V651.1z" /><polygon
+       id="polygon8"
+       points="376.1,724.6 425.6,777.7 464.6,735.2 464.6,884 535.4,884 535.4,735.2 574.4,777.7 623.9,724.6 500,600.7  " /></g></svg>

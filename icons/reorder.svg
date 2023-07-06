@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 100 100;"
+   viewBox="0 0 100 100"
+   y="0px"
+   x="0px"
+   id="svg3337"
+   version="1.1"><metadata
+     id="metadata17"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs15" /><g
+     id="g3"><path
+       id="path5"
+       d="M0,100h60V73.8H0V100z M4.3,78.7h51.3V95H4.3V78.7z" /><path
+       id="path7"
+       d="M0,63.1h60V36.9H0V63.1z M4.3,41.8h51.3v16.3H4.3V41.8z" /><path
+       id="path9"
+       d="M0,26.2h60V0H0V26.2z M4.3,5h51.3v16.3H4.3V5z" /><polygon
+       id="polygon11"
+       points="94.3,9.7 94.3,9.7 78.6,9.7 78.6,1 67,12.6 78.6,24.2 78.6,14.7 94.3,14.7 94.3,85.6 78.6,85.6 78.6,76.4 67,88    78.6,99.6 78.6,90.6 99.3,90.6 99.3,88.3 99.3,88.3 99.3,9.7  " /></g></svg>

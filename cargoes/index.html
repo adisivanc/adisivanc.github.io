@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-    <title>Cargoes</title>
+    <title>Cargoes </title>
           
     <link href="./assets/css/style.css" rel="stylesheet"/>
 </head>
@@ -370,22 +370,69 @@
                     <p>Container tracking has never been so easy, discover the unlimited features and possibilities that come with Cargoes Flow.</p>
                 </div>
                 <section class="section04-mini">
-                    <div class="section04-content">
-                        <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
-                        <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
-                        <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
-                        <div class="secArrow">
-                            <span>
-                                <img src="./assets/img/arrowLeft.svg" alt="Left Arrow" title="Left Arrow" />                                
-                            </span>
-                            <span>
-                                <img src="./assets/img/arrowRight.svg" alt="Right Arrow" title="Right Arrow" />                                  
-                            </span>
+                    <div class="slider">
+                        <div class="slider-container">
+                            <div class="slide">
+                                <div class="section04-content">
+                                    <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                                    <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
+                                    <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
+                                </div>
+                                <div class="section04-img">
+                                    <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="section04-content">
+                                    <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                                    <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
+                                    <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
+                                </div>
+                                <div class="section04-img">
+                                    <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="section04-content">
+                                    <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                                    <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
+                                    <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
+                                </div>
+                                <div class="section04-img">
+                                    <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="section04-content">
+                                    <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                                    <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
+                                    <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
+                                </div>
+                                <div class="section04-img">
+                                    <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="section04-content">
+                                    <h3>Predictive ETA & Carbon Emission Footprint on Cargoes Flow</h3>
+                                    <p>Make intelligent future decisions by measuring the performance of carriers, lanes and adherence to promised ETAs by different parties, while also monitoring your carbon footprint.</p>
+                                    <button class="btn btn-primary text-uppercase hideForMobile" onclick="popupToggle(true)">Book A DEMO</button>
+                                </div>
+                                <div class="section04-img">
+                                    <img class="preview" src="./assets/img/Macbook.svg" alt="" />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="section04-img">
-                        <img class="preview" src="./assets/img/Macbook.svg" alt="" />
-                    </div>
+                        
+                        <div class="secArrow">
+                            <button class="prev-btn">
+                                <img src="./assets/img/arrowLeft.svg" alt="Left Arrow" title="Left Arrow" />                                
+                            </button>
+                            <button class="next-btn">
+                                <img src="./assets/img/arrowRight.svg" alt="Right Arrow" title="Right Arrow" />                                  
+                            </button>
+                        </div>
+                    </div>                
                 </section>
             </div>
         </section>
@@ -671,6 +718,44 @@
             document.getElementById("firstStage").style.display="none";
             document.getElementById("secondStage").style.display="block";
         }
+
+
+
+
+
+        // Slider Logic
+        const sliderContainer = document.querySelector('.slider-container');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const slides = document.querySelectorAll('.slide');
+
+        let currentIndex = 0;
+        const slideWidth = slides[0].clientWidth;
+
+        function goToSlide(index) {
+        sliderContainer.style.transform = `translateX(-${slideWidth * index}px)`;
+        currentIndex = index;
+        }
+
+        function goToNextSlide() {
+        if (currentIndex === slides.length - 1) {
+            goToSlide(0);
+        } else {
+            goToSlide(currentIndex + 1);
+        }
+        }
+
+        function goToPrevSlide() {
+        if (currentIndex === 0) {
+            goToSlide(slides.length - 1);
+        } else {
+            goToSlide(currentIndex - 1);
+        }
+        }
+
+        nextBtn.addEventListener('click', goToNextSlide);
+        prevBtn.addEventListener('click', goToPrevSlide);
+
     </script>
 </body>
 </html>
