@@ -121,14 +121,7 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .section01-info > .listOfClients > .clientContainer { flex-grow:1; }
 .section01-info > .listOfClients > .scrollDown { align-self:center; margin-top: 48px; }
 .clientList { position: relative; height:45px; max-width:65%; overflow: hidden; }
-.clientList > div { display: inline-flex; gap:60px;  }
-.clientList > div > div { position:relative; left:750px; }
-
-.clientList > div > div:nth-child(1) { animation: logoAnimate01 8s linear 0s infinite; }
-.clientList > div > div:nth-child(2) { animation: logoAnimate02 8s linear 0.3s infinite; }
-.clientList > div > div:nth-child(3) { animation: logoAnimate03 8s linear 0.5s infinite; }
-.clientList > div > div:nth-child(4) { animation: logoAnimate04 8s linear 0.8s infinite; }
-.clientList > div > div:nth-child(5) { animation: logoAnimate05 8s linear 1.2s infinite; }
+.clientList > div { display: inline-flex; gap:60px; position:absolute; animation: logoAnimate 15s linear 0s infinite; }
 .clientImg { max-height:40px; }
 .scrollDown-b { display:flex; gap:12px; }
 .scrollDown-b p { color:var(--primaryColor); font-weight:700; font-size: 15px; }
@@ -138,20 +131,10 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
     to { top:-100%; }
 }
 
-@keyframes logoAnimate01 {from{left:750px}to{left:-150px}}
-@keyframes logoAnimate02 {from{left:750px}to{left:-150px}}
-@keyframes logoAnimate03 {from{left:750px}to{left:-150px}}
-@keyframes logoAnimate04 {from{left:750px}to{left:-150px}}
-@keyframes logoAnimate05 {from{left:750px}to{left:-150px}}
-
-
-/*
-@keyframes logoAnimate01 {from{left:0px}to{left:-860px}}
-@keyframes logoAnimate02 {from{left:142px}to{left:-860px}}
-@keyframes logoAnimate03 {from{left:320px}to{left:-860px}}
-@keyframes logoAnimate04 {from{left:482px}to{left:-860px}}
-@keyframes logoAnimate05 {from{left:700px}to{left:-860px}}
-*/
+@keyframes logoAnimate {
+    from { left:0; }
+    to { left:-100%; }
+}
 
 .section02 { padding:80px 0 75px 0; }
 .section02-head { text-align: center; }

@@ -817,22 +817,6 @@
         nextBtn.addEventListener('click', goToNextSlide);
         prevBtn.addEventListener('click', goToPrevSlide);
 
-
-        
-        var element = document.querySelector(".imgList");
-        var animationName = "moveOn";
-        var keyframes = "@keyframes moveOn { from { left: 0; } to { left: 100%; } }";
-        element.animate(animationName, 1000);
-
-        var interval = setInterval(function() {
-        let abc = document.getElementsByClassName("imgList")[0];
-
-        if (abc.firstElementChild.style.left < 0) {
-            let def = abc.firstElementChild;
-            abc.removeChild(abc.firstElementChild);
-            abc.appendChild(def);
-        }
-        }, 200);
     </script>
 </body>
 </html>
