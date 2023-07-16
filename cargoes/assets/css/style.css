@@ -314,6 +314,16 @@ body { font-family:var(--fontSecondary); font-weight:400; font-size:1.05em; }
 .secondStage .btn { width:100%; margin-top:100px; }
 .message { text-align: center; }
 
+
+/*Floating Label*/
+.formRow { position: relative; }
+.formRow input { background-color: transparent; position: relative; z-index: 2; }
+.formRow label { position: absolute; left:8px; top:5px; font-size: 14px; color: #999999; transition:all 0.3s linear 0s; background-color: #FFFFFF; padding: 3px; z-index: 0; }
+.formRow input:focus + label { color:var(--primaryColor); top: -12px; font-weight: 600; z-index:3; }
+.formRow select + input + label { left:92px; }
+
+
+
 @media screen and (min-width:992px) and (max-width:1200px) {
     .container { max-width:960px; }
 
