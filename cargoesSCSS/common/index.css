@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0; 
+  font-family: 'Montserrat';
+  font-style: normal; 
+  font-weight: 400
+}
+html {
+  scroll-behavior: smooth 
+}
+
+:root {
+  --primaryColor:#0B78D0;
+  --infoColor:#F9FCFF;
+  --primaryLight:#e3f2fd;
+  --secGray:#6a6a6d;
+  --primaryGray:#1d1d1d;
+  --fontPrimary:'Conthrax';
+  --fontSecondary:'Montserrat';
+  --gradientSuccess:linear-gradient(135deg, #00e676 0%, #5fb25c 100%);
+  --gradientWarning:linear-gradient(135deg, #ffc107 0%, #ffa000 100%);;
+  --gradientDanger:linear-gradient(135deg, #e53935 0%, #ad2f33 100%);
+  --gradientInfo:linear-gradient(135deg, #0b78d0 0%, #076284 100%);
+  --start01:-300px;
+  --start02:-250px;
+  --start03:-200px;
+  --start04:-150px;
+  --start05:-100px;
+  --start06:-50px;
+  --startNull:0px;
+  --errorColor:#ad2f33;
+}
+
+body { 
+  font-family: var(--fontSecondary); 
+  font-weight: 400; 
+  font-size: 15px; 
+}
+.container { 
+  max-width: 1440px; 
+  margin: 0 auto; 
+}
+
+.btn { 
+  padding: 9.5px 47px; 
+  border-radius: 4px; 
+  font-size: 0.75rem; 
+  font-weight: 700; 
+  letter-spacing: 0.2px; 
+}
+.btn-primary { 
+  background-color: var(--primaryColor);  
+  color:#FFFFFF; 
+  border: 3px solid var(--primaryColor); 
+}
+.btn-outline-info { 
+  background-color:#FFFFFF; 
+  color: var(--primaryColor); 
+  border: 3px solid var(--primaryColor); 
+}
+.btn-light { 
+  background-color:#FFFFFF; 
+  color:#333333; 
+  border: 3px solid #FFFFFF; 
+  color: var(--secGray); 
+}
+.btnCustom { 
+  border: 1px solid #E3F2FD; 
+  background: #F9FCFF; 
+  border-radius: 100px; 
+  padding: 10px 41px; 
+  font-weight: 700; 
+  text-transform: capitalize; 
+  font-size: 15px; 
+  line-height: 21px; 
+}
+.btn-warning { 
+  background-color: var(--infoColor); 
+  color: #ffa000; 
+}
+.btn-success { 
+  background-color: var(--infoColor); 
+  color: #5FB25C; 
+}
+.btn-info { 
+  background-color: var(--infoColor); 
+  color:#007BA8; 
+}
+.btn-tranp {  
+  background-color: transparent; 
+  border:none; 
+}
+.text-uppercase { 
+  text-transform: uppercase; 
+}
+.text-captialize { 
+  text-transform: capitalize; 
+}
+.hideForMobile { 
+  display: block; 
+}
+.showForMobile { 
+  display: none; 
+}
+.hidden { 
+  display: none; 
+}
+[onclick] {
+  cursor: pointer;
+}

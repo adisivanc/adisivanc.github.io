@@ -1,0 +1,75 @@
+.section06 { 
+  border-top: 1px solid #eeeeee; 
+  padding: 75px 0; 
+}
+.section06 .btnCustom { 
+  padding: 10px 32px; 
+}
+.section06-main { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 22% 
+}
+.section06-main > div { 
+  flex: 1 1 300px; 
+}
+.section06-main .section06-content { 
+  flex-basis: 38%; 
+}
+.section06-main .section06-support { 
+  flex-basis: 40%; 
+}
+.section06-content h3 { 
+  font-family: var(--fontPrimary); 
+  text-transform: uppercase;
+  font-size: 30px; 
+  max-width: 480px; 
+  margin: 20px 0 30px 0; 
+  line-height: 50px; 
+  font-weight: 600; 
+}
+.section06-content p { 
+  max-width: 100%; 
+  font-size: 21px; 
+  line-height: 30px; 
+  margin-bottom: 40px; 
+  color:var(--primaryGray); 
+}
+.section06-support img { 
+  width: 100%; 
+  border-radius: 20px; 
+}
+.sec06-rel { 
+  position: relative; 
+}
+.sec06-abs { 
+  position: absolute; 
+  display: flex; 
+  left: 20px; 
+  bottom: 20px; 
+  background-color: #FFFFFF; 
+  width: calc(100% - 40px); 
+  padding: 39px 40px; 
+  border-radius: 10px; 
+}
+.sec06-rel svg { 
+  width: 56px; 
+}
+.sec06-abs > span:first-child { 
+  flex-basis: 100px; 
+  align-self: center; 
+}
+.sec06-abs > span:last-child { 
+  flex: 1; 
+}
+.sec06-flex h6 { 
+  font-size: 18px; 
+  margin-bottom: 20px; 
+  font-weight: 700; 
+  line-height: 24px; 
+}
+.sec06-flex p { 
+  font-size: 15px; 
+  max-width: 98%; 
+  line-height: 21px; 
+}

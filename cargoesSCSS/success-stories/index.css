@@ -1,0 +1,119 @@
+.section03 { 
+  border-top: 1px solid #eeeeee; 
+  padding:75px 0; 
+}
+.section03 .btnCustom { 
+  padding: 10px 51px; 
+}
+.section03-main { 
+  display: flex; 
+  flex-wrap: wrap; 
+}
+.section03-main > div { 
+  flex: 1 1 300px; 
+}
+.section03-main .section03-content { 
+  flex-basis: 42%; 
+}
+.section03-main .section03-stories { 
+  flex-basis: 48%; 
+  margin-left: 10%; 
+}
+.section03-content h3 { 
+  font-family: var(--fontPrimary); 
+  text-transform: uppercase;
+  font-size: 30px; 
+  max-width: 96%;
+  margin: 20px 0 30px 0; 
+  line-height: 50px; 
+}
+.section03-content h4 { 
+  font-family: var(--fontPrimary); 
+  text-transform: uppercase;
+  font-size: 24px; 
+  font-weight: 600px; 
+  line-height: 24px; 
+  max-width: 96%; 
+}
+.section03-content p { 
+  max-width: 72%;
+  font-size:21px;
+  line-height: 30px; 
+  color: var(--primaryGray); 
+}
+.section03-stories ul { 
+  list-style-type: none; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 24px; 
+  scroll-snap-align: start; 
+}
+.section03-stories li { 
+  background-color: #F2F2F2; 
+  padding: 32px 30px; 
+  flex:1 1 225px; 
+  border-radius: 10px; 
+}
+.section03-stories li:hover { 
+  background-color: #FFF5E5; 
+}
+.section03-stories li img { 
+  width: 48px; 
+  height: 48px; 
+  border-radius: 50%; 
+  overflow:hidden; 
+}
+.section03-stories li > p { 
+  font-size: 15px; 
+  line-height: 21px; 
+}
+.section03-stories li > p strong { 
+  font-weight: 700; 
+}
+.section03-stories li:nth-child(2n+1) { 
+  position: relative; 
+  top:50px; 
+}
+.author { 
+  display: flex; 
+  margin-top: 30px; 
+}
+.author p { 
+  font-size: 12px; 
+  line-height: 18px; 
+  margin-left: 20px; 
+  margin-top: 6px;  
+}
+.author p:last-child { 
+  margin-top: 0; 
+}
+.author p:first-child { 
+  font-weight: bold;
+  font-weight: 700; 
+}
+.author span:first-child { 
+  flex-basis: 54px; 
+}
+.author span:last-child { 
+  flex: 1;  
+}
+.clientCount { 
+  margin: 60px 0; 
+  max-height: 54px; 
+  overflow: hidden; 
+}
+.clientCount > div:first-child { 
+  animation: moveUp 10s linear 0s infinite; 
+}
+.clientCount > div > div { 
+  height: 54px; margin-bottom: 54px; 
+}
+
+@keyframes moveUp {
+    0% { margin-top:-108px; }
+    45% { margin-top:-108px; }
+    50% { margin-top:0px;}
+    95% { margin-top:0px;}
+    99.99% { margin-top:54px; }
+    100% { margin-top:-108px; }
+}

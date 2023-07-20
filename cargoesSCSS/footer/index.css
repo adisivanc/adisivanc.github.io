@@ -1,0 +1,26 @@
+.scrollUpFix { 
+  position: relative; 
+  right: 20px; 
+  bottom: 20px; 
+  z-index: 1200; 
+  width: 42px; 
+  float: right; 
+}
+.scrollUpFix svg { 
+  position: absolute; 
+  left: 0; 
+  top:0; 
+  right: 20px; 
+  bottom: 20px; 
+  z-index: 1200;
+}
+.scrollUpFix #scrollDark { 
+  opacity: 0; 
+}
+.scrollUpFix:hover #scrollDark { 
+  opacity: 1; 
+}
+.footer { 
+  background-color: var(--primaryLight); 
+  padding: 18px 0; 
+}

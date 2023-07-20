@@ -1,0 +1,57 @@
+.finalSection { 
+  padding: 75px 0 97px 0; 
+  border-top: 1px solid #eeeeee; 
+  text-align: center; 
+}
+.finalContent { 
+  width: 100%; 
+  position: relative; 
+  padding: 58px; 
+  color:#FFFFFF; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  background-size: cover; 
+}
+.finalContent .title { 
+  font-family: var(--fontPrimary); 
+  text-transform: uppercase;
+  font-size: 24px; 
+  line-height: 36px; 
+  font-weight: 600; 
+}
+.finalContent .btnGrp { 
+  margin: 29px 0 59px 0;  
+  display: flex; 
+  gap: 34px; 
+  justify-content: center; 
+}
+.finalSection .listCont { 
+  display: inline-flex; 
+  gap: 30px; 
+  list-style-type: none; 
+  flex-wrap: wrap; 
+}
+.finalSection .listCont > li { 
+  display: flex; 
+}
+.finalSection .listCont > li svg { 
+  width: 24px; 
+  height: 24px; 
+  margin-right: 10px; 
+}
+.actAsbg { 
+  position: absolute; 
+  left: 0; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  background-color:rgba(0,0,0,.65); 
+  z-index: 2; 
+}
+.mainCon { 
+  position: relative; 
+  z-index: 3; 
+}
+.finalSection .listCont > li p { 
+  margin-top: 3px;
+}

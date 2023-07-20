@@ -1,0 +1,60 @@
+.section05 { 
+  padding: 75px 0; 
+  border-top: 1px solid #eeeeee; 
+}
+.section05 .btnCustom { 
+  padding: 10px 36px; 
+}
+.cardList { 
+  max-width: 88%; 
+  margin: 0 auto; 
+}
+.section05-head { 
+  text-align: center; 
+}
+.section05-head h3 { 
+  font-family: var(--fontPrimary); 
+  text-transform: uppercase;
+  font-size:30px; 
+  font-weight: 600; 
+  line-height: 50px; 
+  max-width: 96%;
+  margin: 20px auto;
+}
+.section05-head p { 
+  max-width: 72%;
+  font-size: 21px;
+  line-height: 30px; 
+  margin: 0 auto; 
+  color: var(--primaryGray);
+}
+.section05-head .btn-primary { 
+  margin: 40px auto 0 auto;
+}
+.sec05-main { 
+  margin-top: 60px; 
+}
+.sec05-main ul { 
+  list-style-type: none; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 109px; 
+}
+.sec05-main ul li { 
+  flex: 1 1 200px; 
+}
+.sec05-main img { 
+  width: 100%; 
+  height: 329px;
+  margin-bottom: 50px; 
+}
+.sec05-main h5 { 
+  font-size: 18px; 
+  font-weight: 700; 
+  line-height: 24px; 
+}
+.sec05-main p { 
+  font-size: 15px; 
+  line-height: 21px; 
+  margin-top: 20px; 
+}
