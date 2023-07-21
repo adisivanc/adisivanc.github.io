@@ -26,11 +26,11 @@
 .navContainer { 
   list-style-type: none; 
   display: flex; 
-  gap:70px; 
+  gap:50px; 
   justify-content: flex-end;
 }
 .navContainer > li { 
-  padding: 18px 0 14px 0; 
+  padding: 19px 10px 15px 10px; 
   border-bottom: 4px solid transparent; 
 }
 .navContainer > li.active { 
